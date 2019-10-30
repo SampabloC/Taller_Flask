@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Contacts</title>
-    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand">Contacts</a>
     </nav>
-    <div class="container pt-5">
-      {% block boy %}
+    <div class="container pt-5"> <!-- Bloque que va a copiar estructura a otro-->
+      {% block body %}
       {% end block %}
     </div>
     {% for contacts in contacts %}
