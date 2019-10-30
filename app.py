@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template#, urlfor
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__) #Nombre de la aplicaciòn dentro de Flask
@@ -13,8 +13,8 @@ class Contacts(db.Model):
 
 @app.route('/')
 def home():
-    return 'hola mundo'
+    return render_template('layouts.html')
 
 
 if __name__ == '__main__':
-    app.run(port = 3000, debug = True)
+    app.run(port = 5000, debug = True)

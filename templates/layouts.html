@@ -2,9 +2,19 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Contacts</title>
+    <link rel="stylesheet" href="/css/master.css">
   </head>
   <body>
-    <h1>Contacts</h1>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand">Contacts</a>
+    </nav>
+    <div class="container pt-5">
+      {% block boy %}
+      {% end block %}
+    </div>
+    {% for contacts in contacts %}
+
+    {% endfor %}
   </body>
 </html>
